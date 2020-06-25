@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Blog</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- fonts -->
+	<script src="https://kit.fontawesome.com/6e4540c13e.js" crossorigin="anonymous"></script>
+
+	<!-- font family -->
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+	<!-- slick carousel -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- 	custom styling -->
+    <link rel="stylesheet" href="../css/style_admin.css">
+     <link rel="stylesheet" href="../../Home/css/style.css">
+</head>
+<body>
+	<!-- Admin-navbar -->
+	<header class="tabbar">
+		<div class="logo">
+			<h1 class="logo-text"><span>A</span>dmin</hi>
+		</div>
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			<li class="account-toggle">
+				<a href="#">
+					<i class="fa fa-user"></i>
+					Cong Dat
+					<i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+				</a>
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+			        <li><a href="#" class="logout">Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+    <!--End Admin-navbar -->
+	<!-- Admin page wrapper -->
+    <div class="admin-wrapper">
+    	<!-- Left sidebar -->
+    	<div class="left-sidebar">
+    		<ul class="menu">
+    			<li class="menu-items">
+    				<div class="line1"></div>
+    				<div class="line2"></div>
+    				<a href="../posts/index.html" class="menu-posts">Manage Posts</a>
+    			</li>
+    			<li class="menu-items">
+    				<div class="line1"></div>
+    				<div class="line2"></div>
+    				<a href="../topics/index.html" class="menu-topics">Manage Topics</a>
+    			</li>
+    			<li class="menu-items">
+    				<div class="line1"></div>
+    				<div class="line2"></div>
+    				<a href="../users/index.html" class="menu-users">Manage Users</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<!-- End left sidebar -->
+    	<!-- Admin content -->
+    	<div class="admin-content">
+    		<div class="button-control">
+    			<a href="../topics/create.html" class="button-add">Add Topic</a>
+    			<a href="../topics/index.html" class="button-post">Manage Topics</a>
+    		</div>
+
+    		<div class="content">
+    			<h2 class="page-title">Manage Topics</h2>
+    			<form action="../topics/edit.html" method="post" class="manage-items">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Enter topic name" class="text-input">
+                    </div>
+                    <div>
+                        <label>Content</label>
+                        <textarea name="content_topic" id="content" class="text-input"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" name="submit-topic" class="button-topic">Add Topic</button>
+                    </div>
+                </form>
+    		</div>
+    	</div>
+    	<!-- End Admin content -->
+    </div>
+    <!-- End Admin page wrapper -->
+
+
+
+	<!--Jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- ckeditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
+	<!-- slick carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../../Home/js/script.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

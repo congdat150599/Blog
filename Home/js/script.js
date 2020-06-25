@@ -48,4 +48,11 @@ $(document).ready(function(){
     // instead of a settings object
       ]
 	});
+
+	//Tabbar 
+
+	$('.content .content-left .tabbar-control .line-control .trending').hover(function(){
+		$('.content .content-left .tabbar-control .line-control .trending').toggleClass('.line-control-color');
+	});
+	//End Tabbar
 });
