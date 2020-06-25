@@ -6,6 +6,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background: #f6f6f6;
+	/*font-size: .5em;*/
 }
 
 h1 h2 h3 h4 h5 h6{
@@ -27,8 +28,7 @@ header{
 	background: #008489;
     height: 66px;
     border: none;
-    border-radius: 54px;
-    margin: 0 10em;
+    margin: 0 ;
 }
 
 header *{
@@ -105,7 +105,6 @@ header ul li a:hover{
 	transition: 0.5s;
 	text-decoration: none;
 	border: none;
-	border-radius: 54px;
 }
 
 header .menu-toggle{
@@ -217,26 +216,192 @@ header .menu-toggle{
 /*Post Content*/
 
 .content{
-	border:1px solid blue;
-	width: 
+	/*border:1px solid blue;*/
+	width: 100%;
+	height: 830px;
 }
 
 /*Post Content Left*/
-.content-left{
-	border: 1px solid red;
+.content .content-left{
+	border-top: 1px solid #e0e0d1;
+	width: 76%;
+	height: 800px;
+	margin: .5em auto auto 0;
+	float: left;
+}
+
+.content .content-left .tabbar-control{
+/*	border:1px solid green;*/
 	width: 100%;
-	height: 250px;
+	height: 30px;
+	display: flex;
+	margin-top: 1em;
+} 
+
+.content .content-left .tabbar-control .line-control{
+	border-bottom: 1px solid black;
+	margin-bottom: 0;
+	margin-left: 54px;
+	width: 100%;
 }
 
-.content-left .container{
-	border: 1px solid green;
-	width: px;
+.line-control-color{
+	border-bottom: 3px solid blue;
+	margin-bottom: 0;
+	margin-left: 54px;
+	width: 100%;
+}
+
+.content .content-left .tabbar-control .line-control .trending{
+	display: inline;
+	width: 100px;
+	margin-left: 0px;
+	height: 20px;
+	text-align: center;
+}
+
+
+.content-left .container-main{
+/*	border:1px solid green;*/
+	width: 100%;
+	height: 600px;
+	/*margin-top: .5em;*/
+	padding-left: .5em;
+	display: grid;
+	grid-template-columns: repeat(2,500px);
+	column-gap: 1.5em;
+}
+
+.content-left .container-main .container{
+	border: 1px solid black;
+	width: 500px;
 	height: 200px;
+	margin: 2em 0 auto 3em;
+	padding-left: 0;
+	position: relative;
+	overflow: hidden;
 }
 
-/*End Post COntent Left*/
+.content-left .container-main .container .content-post-image{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.content-left .container-main .container .content-post-main{
+	margin: .2em 0em .2em 12.6em;
+	padding-left: 10px;
+	position: absolute;
+	height: 190px;
+}
+
+.content-left .container-main .container .content-post-main .content-post-title{
+	font-size: 1.8em;
+
+}
+
+.content-left .container-main .container .content-post-main .content-post-calendar{
+	padding-left: .3em;
+}
+
+.content-left .container-main .container .content-post-main .content-post{
+	margin-top: 1em;
+}
+
+/*End Post Content Left*/
+
+/*Post Content Right*/
+.content .content-right{
+	border-top:1px solid #e0e0d1;
+	width: 24%;
+	height: 744px;
+	float: right;
+	margin: .5em auto auto 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.content .content-right .avatar-right-image{
+	background: rgba(0,0,0,0.7);
+	z-index: 100;
+	opacity: 0.7;
+	width: auto;
+	height: 800px;
+}
+
+.content .content-right .content-avatar{
+	/*border:1px solid red;*/
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	top: 200px;
+	left: 26px;
+	z-index: 110;
+	text-align: center;
+	color: white;
+}
+
+.content .content-right .content-avatar .content-avatar-title{
+	font-family: 'Dancing Script', cursive;
+	font-size: 4em;
+}
+
+.content .content-right .content-avatar .content-avatar-header{
+	font-family: 'Pacifico', cursive;
+	font-size: 1em;
+}
+/*End Post Content Right*/
 
 /*End Post Content*/
+
+.featured{
+/*	border: 1px solid red;*/
+	width: 100%;
+	height: 600px;
+}
+
+.featured .featured-theme{
+	margin-top: 6em;
+	/*border:1px solid green;*/
+	width: 95%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	margin-left: 2.5em;
+}
+
+.featured .featured-theme .theme{
+	width: 350px;
+	height: 600px;
+	text-align: center;
+	margin: .5em 2em auto 2em;
+	position: relative;
+	overflow: hidden;	
+}
+
+.featured .featured-theme .theme .theme-image{
+	width: 350px;
+	height: 400px;
+	z-index: 100;
+	opacity: 0.6;
+}
+
+.featured .featured-theme .theme .theme-issue{
+/*	border:1px solid red;*/
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 300px;
+	left: 20px;
+	z-index: 110;
+	background: #fff;
+}
+
+.featured .featured-theme .theme .theme-issue .theme-title{
+	margin: 1em 0;
+	font-size: 2em;
+	font-family: 'Pacifico', cursive;
+}
 
 /*Responsive*/
 
