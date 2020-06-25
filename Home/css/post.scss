@@ -1,0 +1,159 @@
+@import 'variables';
+
+.top-hero {
+    position: relative;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 50px 50px;
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+
+    background-color: $color-light-blue;
+
+    .text {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-right: 1.5rem;
+
+        .title {
+            display: block;
+
+            padding-bottom: 1rem;
+
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .description {
+            position: relative;
+            
+            display: flex;
+            align-items: center;
+
+            .author-avatar {
+                margin-right: 0.5rem;
+
+                width: 40px;
+                height: 40px;
+            }
+
+            .details {
+                position: relative;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                p {
+                    text-align: left;
+                }
+
+                .author {
+                    padding-bottom: 0.5rem;
+                }
+
+                .date {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .post-thumb {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.post-content {
+    position: relative;
+
+    padding: 100px 250px;
+    width: 100%;
+    height: auto;
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    p {
+        display: block;
+
+        padding-bottom: 1.75rem;
+        
+        text-align: left;
+    }
+
+    p:last-child {
+        padding-bottom: 0;
+    }
+
+    h3 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    ul {
+        display: block;
+
+        list-style: disc inside;
+
+        li {
+            padding-left: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.rec-posts {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 100px;
+    width: 100%;
+    height: auto;
+
+    .rec-sep {
+        margin-bottom: 1.5rem;
+    }
+
+    .articles {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0.5rem;
+
+        width: auto;
+        min-width: 720px;
+
+        .article {
+            width: 168px;
+
+            border-radius: $border-radius;
+            background-color: $color-background-grey;
+            
+            .thumb {
+                background-image: url('../images/tropical-rect.jpg');
+                background-size: 100% 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+
+}

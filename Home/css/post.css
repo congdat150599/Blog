@@ -1,0 +1,181 @@
+/*******************************\
+
+    # COLORS
+
+\*******************************/
+/*******************************\
+
+    # LAYOUTS
+
+\*******************************/
+.top-hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 50px;
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-color: #add8e6;
+}
+
+.top-hero .text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 1.5rem;
+}
+
+.top-hero .text .title {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.top-hero .text .description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-hero .text .description .author-avatar {
+  margin-right: 0.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.top-hero .text .description .details {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.top-hero .text .description .details p {
+  text-align: left;
+}
+
+.top-hero .text .description .details .author {
+  padding-bottom: 0.5rem;
+}
+
+.top-hero .text .description .details .date {
+  font-style: italic;
+}
+
+.top-hero .post-thumb {
+  width: 200px;
+  height: 200px;
+}
+
+.post-content {
+  position: relative;
+  padding: 100px 250px;
+  width: 100%;
+  height: auto;
+}
+
+.post-content * {
+  font-size: 1.2rem;
+}
+
+.post-content p {
+  display: block;
+  padding-bottom: 1.75rem;
+  text-align: left;
+}
+
+.post-content p:last-child {
+  padding-bottom: 0;
+}
+
+.post-content h3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.post-content ul {
+  display: block;
+  list-style: disc inside;
+}
+
+.post-content ul li {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.rec-posts {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 100px;
+  width: 100%;
+  height: auto;
+}
+
+.rec-posts .rec-sep {
+  margin-bottom: 1.5rem;
+}
+
+.rec-posts .articles {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  width: auto;
+  min-width: 720px;
+}
+
+.rec-posts .articles .article {
+  width: 168px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rec-posts .articles .article .thumb {
+  background-image: url("../images/tropical-rect.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=post.css.map */

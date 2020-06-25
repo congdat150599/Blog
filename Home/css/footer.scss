@@ -1,0 +1,115 @@
+@import 'variables';
+
+.footer {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 50px 50px;
+    padding-bottom: 0;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+
+    color: $color-light-white;
+
+    background-color: $color-dark-blue;
+
+    * {
+        color: inherit;
+    }
+
+    .slogan {
+        display: block;
+
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .logo {
+        position: relative;
+
+        display: inline-block;
+
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+
+        img {
+            display: block;
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    hr {
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 0.5px;
+    }
+
+    .bottom {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 25px 0;
+        width: 100%;
+        height: auto;
+        min-height: 20px;
+
+        .social-group {
+            position: relative;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .social-icon {
+                display: inline-block;
+
+                margin-right: 1rem;
+                width: 30px;
+                height: 30px;
+
+                background-position: center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+                cursor: pointer;
+            }
+
+            .facebook {
+                background-image: url(../images/facebook.png);
+            }
+            .twitter {
+                background-image: url(../images/twitter.png);
+            }
+            .linked {
+                background-image: url(../images/linked.png);
+            }
+            .youtube {
+                background-image: url(../images/youtube.png);
+            }
+
+            .social-icon:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .copyrights {
+            display: block;
+
+            text-align: right;
+            font-weight: bold;
+        }
+    }
+}
