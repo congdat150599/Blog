@@ -1,0 +1,269 @@
+/*Page Admin*/
+
+
+/*Tabbar left*/
+.tabbar{
+	background: #0C0C0C;
+	height: 66px;
+}
+
+.admin-wrapper{
+	display: flex;
+	height: 90vh;
+	height: calc(100vh - 66px);
+}
+
+.admin-wrapper .left-sidebar{
+	flex: 2;
+	height: 100%;
+	background: #333131;
+}
+
+.admin-wrapper .left-sidebar .menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+.admin-wrapper .left-sidebar .menu li a{
+	padding: 18px;
+	display: block;
+	border-bottom: 1px solid #004044;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-items{
+	position: relative;
+}
+
+.admin-wrapper .left-sidebar .menu .line1{
+	border:.5px solid #331a00;
+	height: 30px;
+	width: 1px;
+	position: absolute;
+	left: 70px;
+	top: -30px;
+}
+
+.admin-wrapper .left-sidebar .menu .line2{
+	border:.5px solid #331a00;
+	height: 30px;
+	width: 1px;
+	position: absolute;
+	right: 70px;
+	top: -30px;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-posts{
+	border:1px solid #848587;
+	margin-top: 30px;
+	text-align: center;
+	width: 80%;
+	margin-left: 30px;
+	border-radius: 12px;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-posts:hover{
+	border:1px solid #02C40D;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-topics{
+	border:1px solid #848587;
+	margin-top: 30px;
+	text-align:center;
+	width: 80%;
+	margin-left: 30px;
+	border-radius: 12px;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-topics:hover{
+	border:1px solid #02C40D;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-users{
+	border:1px solid #848587;
+	margin-top: 30px;
+	text-align: center;
+	width: 80%;
+	margin-left: 30px;
+	border-radius: 12px;
+}
+
+.admin-wrapper .left-sidebar .menu .menu-users:hover{
+	border:1px solid #02C40D;
+}
+
+/*End Tabbar left*/
+
+/*----------------------Manage Posts---------------------------*/
+
+/*----------------Index Posts----------------*/
+
+/*Admin main content*/
+
+.admin-wrapper .admin-content{
+	border:1px solid orange;
+	flex: 8;
+	height: 100%;
+	padding: 40px 100px 100px;
+	overflow-y: scroll;
+}
+
+.admin-wrapper .admin-content .button-control{
+/*	border:1px solid red;*/
+	width: 300px;
+	height: 60px;
+}
+
+.admin-wrapper .admin-content .button-control .button-add{
+	width: 50px;
+	height: 30px;
+	padding: .3em 1em .3em 1em;
+	margin-top: 1em;
+	background: #575655;
+	border-radius: 7px;
+	color: #fff;
+}
+
+.admin-wrapper .admin-content .button-control .button-add:hover{
+	background: #05358A;
+}
+
+.admin-wrapper .admin-content .button-control .button-post{
+	width: 50px;
+	height: 30px;
+	padding: .3em 1em .3em 1em;
+	margin-top: 1em;
+	background: #575655;
+	border-radius: 7px;
+	color: #fff;
+}
+
+.admin-wrapper .admin-content .button-control .button-post:hover{
+	background: #05358A;
+}
+
+.admin-wrapper .admin-content .page-title{
+/*	border:1px solid black;*/
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+
+.admin-wrapper .admin-content .page-title:hover{
+	color: #F46F14;
+}
+
+.admin-wrapper .admin-content .manage-items{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.admin-wrapper .admin-content .manage-items .title{
+	border-bottom:1px solid #D7D6D5;
+	font-size: 20px;
+    font-family: 'Lora', serif;
+    color: #939190;
+    text-align: left;
+}
+
+.admin-wrapper .admin-content .manage-items .post-content tr{
+	border-bottom:1px solid #D7D6D5;
+	margin-top: 3px;
+	padding: 2em 0 1em 0;
+}
+
+.admin-wrapper .admin-content .manage-items .post-content th,td{
+	padding: 10px 0 10px 0;
+	text-align: left;
+}
+
+.admin-wrapper .admin-content .manage-items .post-content .edit{
+	border-right: 1px solid #605B57;
+	padding-right: 10px;
+	margin-right: -10px;
+	margin-left: -15px
+}
+
+.admin-wrapper .admin-content .manage-items .post-content .edit:hover{
+	color: #365BF6;
+	text-decoration: underline;
+}
+
+.admin-wrapper .admin-content .manage-items .post-content .delete{
+	margin-left: -36px;
+}
+
+.admin-wrapper .admin-content .manage-items .post-content .delete:hover{
+	color: #D10A22;
+	text-decoration: underline;
+}
+
+.admin-wrapper .admin-content .manage-items .post-content .publish:hover{
+	color: #06AE10;
+}
+/*End Admin main content*/
+
+/*-----------------------------------------------------------------------------*/
+
+/*--------------------Create Posts-----------------------*/
+
+.admin-wrapper .admin-content .manage-items .text-input{
+	width: 100%;
+	padding: .3em 0 .3em .3em;
+}
+
+.admin-wrapper .admin-content .manage-items label{
+	font-size: 20px;
+	font-family: 'Lora', serif;
+}
+
+.admin-wrapper .admin-content .manage-items .submit-post{
+	margin-top: 16px;
+	background: #575655;
+	color: #fff;
+	border: none;
+	padding: .3em 1em .3em 1em;
+	border-radius: 7px;
+}
+
+.admin-wrapper .admin-content .manage-items .submit-post:hover{
+	background: #05358A;
+}
+/*-------------------------------------------------------*/
+
+/*--------------------------Topic----------------------------*/
+/*---------------------manage topic-------------------------*/
+
+.admin-wrapper .admin-content .manage-items .post-content tr .edit{
+	border-right: 1px solid #605B57;
+	padding-right: 10px;
+	margin-right: -22px;
+	margin-left: -15px
+}
+
+.admin-wrapper .admin-content .manage-items .post-content tr .delete{
+	margin-left: 20px;
+}
+/*--------------------------End manage topic------------------------------*/
+
+/*---------------------------Create topic----------------------------------*/
+
+.admin-wrapper .admin-content .manage-items .button-topic{
+	margin-top: 16px;
+	background: #575655;
+	color: #fff;
+	border: none;
+	padding: .3em 1em .3em 1em;
+	border-radius: 7px;
+}
+
+.admin-wrapper .admin-content .manage-items .button-topic:hover{
+	background:#05358A;
+}
+
+/*---------------------------End Create topic------------------------------*/
+/*--------------------------End Topic-------------------------------------*/

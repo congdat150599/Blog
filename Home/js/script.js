@@ -55,4 +55,5 @@ $(document).ready(function(){
 		$('.content .content-left .tabbar-control .line-control .trending').toggleClass('.line-control-color');
 	});
 	//End Tabbar
+	
 });
