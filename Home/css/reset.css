@@ -4,14 +4,26 @@
     padding: 0;
 
     color: rgba(0, 0, 0, 0.8);
+
 }
 
 body {
     font-size: 16px;
+    
+    background: #f6f6f6;
 }
 
 
 a, link {
     text-decoration: none;
-    color: blue;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Lora', serif;
+    margin: .3em;
 }

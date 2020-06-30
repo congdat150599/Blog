@@ -3,15 +3,16 @@
     # COLORS
 
 \*******************************/
-
 $color-light-blue: #add8e6;
 $color-grey-text: rgba(0, 0, 0, 0.8);
 $color-light-grey: rgba(0, 0, 0, 0.5);
 $color-background: white;
-$color-background-blue: #0E94A0;
-$color-background-grey: rgba(0, 0, 0, 0.1);
+$color-background-blue: #008489;
+$color-background-grey: rgba(7, 6, 6, 0.1);
 $color-dark-blue: #192841;
 $color-light-white: rgba(255, 255, 255, 0.8);
+
+
 
 /*******************************\
 
@@ -20,9 +21,39 @@ $color-light-white: rgba(255, 255, 255, 0.8);
 \*******************************/
 $border-radius: 5px;
 
+
+
 /*******************************\
 
     # SIZINGS
 
 \*******************************/
 $header-height: 66px;
+
+
+
+/*******************************\
+
+    # RESPONSIVE
+
+\*******************************/
+// Mixins
+$mobile-width:480px;
+$tablet-width:768px;
+$desktop-width:1024px;
+$desktoppro-width:1280px;
+
+@mixin mobile{ @media (max-width: #{$tablet-width - 1px}) {
+	@content;
+ } 
+}
+
+@mixin tablet{ @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+	@content;
+ }
+}
+
+@mixin desktop{ @media (min-width: #{$desktop-width}) and (max-width: #{$desktoppro-width} ) {
+	@content;
+ }
+}

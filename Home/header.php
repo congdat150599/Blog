@@ -22,7 +22,9 @@
 <!--In place for Header Layout on Scrolled-->
 <div class="head-holder"></div>
 <!--Toglling Header Sidebar Display-->
-<div class="headnav-toggle"></div>
+<div class="headnav-toggle">
+    <img src="images/menu.png">
+</div>
 
 <!--Scripts for Effects and Animations-->
 <script src="js/head-nav.js"></script>

@@ -38,14 +38,15 @@ function reshowHeadNav() {
 }
 
 function showHeadNavToggle() {
-    headToggleBtn.style.display = "block";
+    // Flex for the inner Imgs
+    headToggleBtn.style.display = "flex";
     // Responsive position or Default position:
     if (headToggleBtn.classList.contains("responsive")) {
 
     } else {
         let headNavWidth = headToggleBtn.offsetWidth;
         console.log(headNavWidth);
-        gsap.fromTo(headToggleBtn, {duration: 0.5, x:headNavWidth}, {x:-(headNavWidth / 2)});
+        gsap.fromTo(headToggleBtn, {duration: 0.5, x:headNavWidth}, {x:0});
     }
 }
 
@@ -57,6 +58,7 @@ function showHeader() {
         let headerWidth = header.offsetWidth;
         console.log(headerWidth);
         gsap.fromTo(header, {duration: 0.5, x:headerWidth}, {x:0});
+        gsap.fromTo(headToggleBtn, {duration: 0.5, x:0}, {x:-headerWidth}, "-=0.5");
     }
 }
 
@@ -77,6 +79,14 @@ function hideHeader() {
                             header.style.display = "none";
                     }
                 }
+            );
+            gsap.to(
+                headToggleBtn,
+                {
+                    duration: 0.5,
+                    x:0
+                },
+                "-=0.5"     // At the same time as the previous Animations
             );
         }
     }
@@ -106,7 +116,11 @@ function main() {
     headToggleBtn.addEventListener(
         'click',
         function() {
-            showHeader();
+            if (header.style.display == "none")
+                showHeader();
+            else {
+                hideHeader();
+            }
         }
     );
     
@@ -117,9 +131,11 @@ function main() {
             let target = event.target;
             console.log(target);
             // Clicking outside of the Header
+            // - ANd not children of the Toggler
             if (
                 target != header && 
                 target != headToggleBtn &&
+                !headToggleBtn.contains(target) &&
                 target.closest(".header-side") == null) {
                 // If the Header is visible
                 if (header.style.display != "none") {

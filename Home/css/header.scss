@@ -122,7 +122,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 200;
 
     display: none;
     flex-direction: column;
@@ -199,19 +199,27 @@ header {
 // Responsiveness
 .headnav-toggle {
     position: fixed;
-    z-index: 5;
-    left: 100%;
-    top: 40%;
+    z-index: 190;
+    right: 0;
+    top: 35%;
     transform-origin: center;
-    transform: translate(50%, -50%);
 
     display: none;
+    justify-content: center;
+    align-items: center;
 
-    border-radius: 50%;
-    width: 50px;
+    width: 40px;
     height: 40px;
 
-    background-color: yellow;
+    background-color: $color-background-blue;
+
+    img {
+        position: absolute;
+        display: block;
+
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .sticky {
@@ -298,7 +306,7 @@ header {
         }
     }
 
-    // DIsable Header Toggle
+    // DIsable Header Toggle when the Screen is too Tight
     .headnav-toggle {
         opacity: 0;
         pointer-events: none;

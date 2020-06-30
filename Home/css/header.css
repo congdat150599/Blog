@@ -13,6 +13,11 @@
     # SIZINGS
 
 \*******************************/
+/*******************************\
+
+    # RESPONSIVE
+
+\*******************************/
 /*create nemu navbar*/
 header {
   background: #008489;
@@ -129,7 +134,7 @@ header .menu-toggle {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 200;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -216,18 +221,28 @@ header .menu-toggle {
 
 .headnav-toggle {
   position: fixed;
-  z-index: 5;
-  left: 100%;
-  top: 40%;
+  z-index: 190;
+  right: 0;
+  top: 35%;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
   display: none;
-  border-radius: 50%;
-  width: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
   height: 40px;
-  background-color: yellow;
+  background-color: #008489;
+}
+
+.headnav-toggle img {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
 }
 
 .sticky {
@@ -259,7 +274,7 @@ header .menu-toggle {
     width: 100%;
     height: auto;
     max-height: 100vh;
-    background: #0E94A0;
+    background: #008489;
   }
   .header .nav .nav-item {
     padding: 0.5rem;

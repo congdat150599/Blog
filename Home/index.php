@@ -23,9 +23,9 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- 	custom styling -->
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -49,7 +49,7 @@
 		    </h3>
         </div>
 		<div class="shape rellax">
-			<img src="../Home/images/flight.png" alt="">
+			<img class="airplane" src="../Home/images/flight.png" alt="">
 		</div>
 	</div>
 	<!-- End Introduce -->
@@ -260,5 +260,7 @@
 
 	<script src="js/script.js"></script>
 	<script src="js/parallax.min.js"></script>
+	<!--Animated Airplane-->
+	<script src="js/airplane.js"></script>
 </body>
 </html>
