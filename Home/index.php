@@ -276,8 +276,5 @@
 
 <script src="js/script.js"></script>
 <script src="js/parallax.min.js"></script>
-<script>
-  var rellax = new Rellax('.rellax');
-</script>
 </body>
 </html>
