@@ -1,6 +1,6 @@
 <footer class="footer">
-    <div class="slogan">The World most Interesting Blog!</div>
-    <div class="logo">
+    <div class="slogan" data-aos="zoom-out-left" data-aos-delay="200">The World most Interesting Blog!</div>
+    <div class="logo" data-aos="flip-right" data-aos-delay="200">
         <img src="images/logo-placeholder.png">
     </div>
     <hr />

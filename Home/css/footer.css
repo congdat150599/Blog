@@ -8,6 +8,11 @@
     # LAYOUTS
 
 \*******************************/
+/*******************************\
+
+    # SIZINGS
+
+\*******************************/
 .footer {
   position: relative;
   display: -webkit-box;
@@ -81,6 +86,18 @@
   min-height: 20px;
 }
 
+@media (max-width: 767px) {
+  .footer .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer .bottom .social-group {
   position: relative;
   display: -webkit-box;
@@ -92,6 +109,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer .bottom .social-group {
+    display: block;
+  }
 }
 
 .footer .bottom .social-group .social-icon {
@@ -129,5 +152,11 @@
   display: block;
   text-align: right;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .footer .bottom .copyrights {
+    display: block;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

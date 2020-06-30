@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACJ,SAAS,EAAE,EAAE;EAEb,WAAO;IACN,SAAS,EAAE,IAAI;IACf,OAAO,EAAE,GAAG",
+"sources": ["blank.scss"],
+"names": [],
+"file": "blank.css"
+}

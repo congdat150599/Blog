@@ -1,0 +1,247 @@
+.content-areas {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+      grid-template-areas: "sub-block" "articles";
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.content-areas .articles-block {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: articles;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0;
+  width: auto;
+  height: auto;
+}
+
+.content-areas .articles-block .tabbar-control {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  height: 30px;
+}
+
+.content-areas .articles-block .tabbar-control .line-control {
+  border-bottom: 1px solid black;
+  margin-bottom: 0;
+  margin-left: 54px;
+  width: 100%;
+}
+
+.content-areas .articles-block .tabbar-control .line-control .trending {
+  display: inline-block;
+  width: 100px;
+  margin-left: 0px;
+  height: 20px;
+  text-align: center;
+}
+
+.content-areas .articles-block .tabbar-control .line-control-color {
+  border-bottom: 3px solid blue;
+  margin-bottom: 0;
+  margin-left: 54px;
+  width: 100%;
+}
+
+.content-areas .articles-block .container-main {
+  /*margin-top: .5em;*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.content-areas .articles-block .container-main .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding-left: 0;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+}
+
+.content-areas .articles-block .container-main .container .img-container {
+  position: relative;
+  display: block;
+  width: 25vw;
+  height: auto;
+}
+
+.content-areas .articles-block .container-main .container .img-container .content-post-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content-areas .articles-block .container-main .container .content-post-main {
+  position: relative;
+  padding-left: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.content-areas .articles-block .container-main .container .content-post-main .title-container {
+  display: block;
+  width: 100%;
+}
+
+.content-areas .articles-block .container-main .container .content-post-main .title-container .content-post-title {
+  display: block;
+  width: 100%;
+  font-size: 2.5em;
+}
+
+.content-areas .articles-block .container-main .container .content-post-main .title-container .content-post-calendar {
+  padding-left: .3em;
+}
+
+.content-areas .articles-block .container-main .container .content-post-main .title-container .content-post {
+  display: block;
+  margin-top: 1em;
+  max-width: 300px;
+}
+
+.content-areas .sub-block {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sub-block;
+  position: relative;
+  display: block;
+  margin-top: 60px;
+}
+
+.content-areas .sub-block .avatar-right-image {
+  position: relative;
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  opacity: 0.7;
+  width: 100%;
+  height: 30vh;
+}
+
+.content-areas .sub-block .content-avatar {
+  /*border:1px solid red;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 110;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  color: white;
+}
+
+.content-areas .sub-block .content-avatar .content-avatar-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+}
+
+.content-areas .sub-block .content-avatar .content-avatar-header {
+  font-family: 'Pacifico', cursive;
+  font-size: 1em;
+}
+
+@media (min-width: 1080px) {
+  .content-areas {
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "articles sub-block";
+  }
+  .content-areas .articles-block .tabbar-control {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .content-areas .articles-block .container-main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .content-areas .articles-block .container-main .container {
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    min-height: 200px;
+  }
+  .content-areas .articles-block .container-main .container .img-container {
+    width: 15vw;
+    height: auto;
+  }
+  .content-areas .articles-block .container-main .container .img-container .content-post-image {
+    height: 200px;
+  }
+  .content-areas .articles-block .container-main .container .content-post-main {
+    padding-left: 1rem;
+    max-width: 300px;
+  }
+  .content-areas .articles-block .container-main .container .content-post-main .title-container {
+    max-width: 300px;
+  }
+  .content-areas .articles-block .container-main .container .content-post-main .title-container .content-post-title {
+    max-width: 300px;
+    font-size: 1.8em;
+  }
+  .content-areas .sub-block .avatar-right-image {
+    height: 640px;
+  }
+  .content-areas .sub-block .content-avatar {
+    top: 200px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

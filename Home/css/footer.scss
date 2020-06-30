@@ -1,5 +1,27 @@
 @import 'variables';
 
+//Responsive
+// Mixin
+$mobile-width:480px;
+$tablet-width:768px;
+$desktop-width:1024px;
+$desktoppro-width:1280px;
+
+@mixin mobile{ @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+ } 
+}
+
+@mixin tablet{ @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+ }
+}
+
+@mixin desktop{ @media (min-width: #{$desktop-width}) and (max-width: #{$desktoppro-width} ) {
+    @content;
+ }
+}
+
 .footer {
     position: relative;
 
@@ -65,13 +87,20 @@
         width: 100%;
         height: auto;
         min-height: 20px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;    
+        }
 
         .social-group {
             position: relative;
-
             display: flex;
             justify-content: flex-start;
             align-items: center;
+
+            @include mobile {
+                display: block;
+            }
 
             .social-icon {
                 display: inline-block;
@@ -107,9 +136,11 @@
 
         .copyrights {
             display: block;
-
             text-align: right;
             font-weight: bold;
+            @include mobile {
+                display: block;
+            }
         }
     }
 }

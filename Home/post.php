@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- fonts -->
+	<script src="https://kit.fontawesome.com/6e4540c13e.js" crossorigin="anonymous"></script>
+	<!-- font family -->
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+	<!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!--Custom Stylings-->
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/shared.css" type="text/css" rel="stylesheet">
-    <link href="css/post.css" type="text/css" rel="stylesheet">
+    <link href="css/header.css" type="text/css" rel="stylesheet">
     <link href="css/footer.css" type="text/css" rel="stylesheet">
+    <link href="css/post.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css/style.css" type="text/css" rel="stylesheet"> -->
 </head>
 <body>
+    <!--GSAP ANimation Library-->
+    <script src="js/gsap/gsap.min.js"></script>
+
+    <!--Header-->
+    <?php include('header.php'); ?>
+
     <div class="hero top-hero">
         <div class="text">
             <h2 class="title">Title</h2>

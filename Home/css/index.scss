@@ -1,0 +1,250 @@
+// Default for Mobiles and small tablets (without enough screen size)
+.content-areas {
+    position: relative;
+
+    display: grid;
+    column-gap: 1rem;
+    grid-template-areas:
+        "sub-block"
+        "articles";
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    height: auto;
+    
+    .articles-block {
+        grid-area: articles;
+
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        
+        margin-right: 0;
+        width: auto;
+        height: auto;
+
+        .tabbar-control {
+            align-self: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 1rem;
+            padding-right: 1rem;
+            width: 100%;
+            height: 30px;
+
+            .line-control{
+                border-bottom: 1px solid black;
+                margin-bottom: 0;
+                margin-left: 54px;
+                width: 100%;
+
+                .trending{
+                    display: inline-block;
+                    width: 100px;
+                    margin-left: 0px;
+                    height: 20px;
+                    text-align: center;
+                }
+            }
+
+            .line-control-color{
+                border-bottom: 3px solid blue;
+                margin-bottom: 0;
+                margin-left: 54px;
+                width: 100%;
+            }
+        }
+
+        .container-main {
+            /*margin-top: .5em;*/
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 1rem;
+            row-gap: 1rem;
+
+            padding: 1rem;
+            width: 100%;
+            height: auto;
+
+            .container {
+                position: relative;
+
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                border: 1px solid rgba(0, 0, 0, 0.4);
+                padding-left: 0;
+                width: 100%;
+                min-height: 200px;
+                height: auto;
+
+                .img-container {
+                    position: relative;
+                    display: block;
+            
+                    width: 25vw;
+                    height: auto;
+                    
+                    .content-post-image{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .content-post-main {
+                    position: relative;
+
+                    padding-left: 2rem;
+                    width: 100%;
+                    height: auto;
+
+                    .title-container {
+                        display: block;
+                
+                        width: 100%;
+                        
+                        .content-post-title{
+                            display: block;
+
+                            width: 100%;
+                        
+                            font-size: 2.5em;
+                        }
+                
+                        .content-post-calendar{
+                            padding-left: .3em;
+                        }
+
+                        .content-post{
+                            display: block;
+                        
+                            margin-top: 1em;
+                            max-width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-block {
+        grid-area: sub-block;
+
+        position: relative;
+
+        display: block;
+
+        margin-top: 60px;
+
+        .avatar-right-image{
+            position: relative;
+            display: block;
+    
+            background: rgba(0,0,0,0.7);
+            z-index: 100;
+            opacity: 0.7;
+            width: 100%;
+            height: 30vh;
+        }
+
+        .content-avatar{
+            /*border:1px solid red;*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 110;
+            
+            transform: translate(-50%, -50%);
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            width: 50%;
+            height: 200px;
+    
+            text-align: center;
+            color: white;
+    
+            .content-avatar-title{
+                font-family: 'Dancing Script', cursive;
+                font-size: 4em;
+            }
+    
+            .content-avatar-header{
+                font-family: 'Pacifico', cursive;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+// With enough Screen sizes: All other Device types
+@media (min-width: 1080px) {
+    .content-areas {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+            "articles sub-block";
+
+        .articles-block {
+            .tabbar-control {
+                justify-content: flex-start;
+            }
+
+            .container-main {
+                grid-template-columns: 1fr 1fr;
+    
+                .container {
+                    width: auto;
+                    max-width: 500px;
+                    height: auto;
+                    min-height: 200px;
+
+                    .img-container {
+                        width: 15vw;
+                        height: auto;
+
+                        .content-post-image {
+                            height: 200px;
+                        }
+                    }
+
+                    .content-post-main {
+                        padding-left: 1rem;
+                        max-width: 300px;
+
+                        .title-container {
+                            max-width: 300px;
+
+                            .content-post-title {
+                                max-width: 300px;
+
+                                font-size: 1.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sub-block {
+            .avatar-right-image {
+                height: 700px - 60px;
+            }
+
+            .content-avatar {
+                top: 200px;
+
+                width:100%;
+            }
+        }
+    }
+}
